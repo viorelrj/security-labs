@@ -1,0 +1,7 @@
+label {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+
+    margin-bottom: 16px;
+}
