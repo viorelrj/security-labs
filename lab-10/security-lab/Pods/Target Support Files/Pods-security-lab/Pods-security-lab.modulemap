@@ -1,0 +1,6 @@
+framework module Pods_security_lab {
+  umbrella header "Pods-security-lab-umbrella.h"
+
+  export *
+  module * { export * }
+}

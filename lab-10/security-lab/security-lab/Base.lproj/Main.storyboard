@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="security_lab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0XV-GU-blj">
+                                <rect key="frame" x="89.5" y="436" width="235" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6rb-oS-ata">
+                                <rect key="frame" x="89.5" y="480" width="235" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVQ-Cy-ptj">
+                                <rect key="frame" x="186" y="534" width="42" height="30"/>
+                                <state key="normal" title="Log in"/>
+                                <connections>
+                                    <action selector="logInButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BLU-ib-DIt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6rb-oS-ata" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6ca-fA-JVl"/>
+                            <constraint firstItem="6rb-oS-ata" firstAttribute="top" secondItem="0XV-GU-blj" secondAttribute="bottom" constant="10" id="DWe-CB-Ofa"/>
+                            <constraint firstItem="0XV-GU-blj" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.567633" id="LzB-gr-pRn"/>
+                            <constraint firstItem="LVQ-Cy-ptj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M6Q-WS-K33"/>
+                            <constraint firstItem="0XV-GU-blj" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="MM2-hI-2v1"/>
+                            <constraint firstItem="LVQ-Cy-ptj" firstAttribute="top" secondItem="6rb-oS-ata" secondAttribute="bottom" constant="20" id="Pkx-iy-U4a"/>
+                            <constraint firstItem="0XV-GU-blj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cIL-Z9-hoQ"/>
+                            <constraint firstItem="6rb-oS-ata" firstAttribute="width" secondItem="0XV-GU-blj" secondAttribute="width" id="mkT-tm-30w"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="LVQ-Cy-ptj" id="UYq-Ds-sTA"/>
+                        <outlet property="loginTextField" destination="0XV-GU-blj" id="dqx-mx-xaV"/>
+                        <outlet property="passwordTextField" destination="6rb-oS-ata" id="nC8-m5-zI8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121.73913043478262" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
